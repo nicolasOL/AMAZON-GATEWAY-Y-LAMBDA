@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"edu.escuelaing.arem.parcial.model","l":"Answer"},{"p":"edu.escuelaing.arem.parcial.model","l":"BadAnswer"},{"p":"edu.escuelaing.arem.parcial.model","l":"Operation"},{"p":"edu.escuelaing.arem.parcial.parcialWebServer","l":"ParcialWebServer"}]
