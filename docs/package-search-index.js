@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"edu.escuelaing.arem.parcial.model"},{"l":"edu.escuelaing.arem.parcial.parcialWebServer"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"edu.escuelaing.arem.laboratorio.labWebServer"},{"l":"edu.escuelaing.arem.laboratorio.model"}]
