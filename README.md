@@ -67,7 +67,7 @@ Para ejecutar las pruebas es necesario ejecutar:
 ```
 mvn test
 ``` 
-Adicionalmente se probo el API con POSTMAN como se observa en el video:
+Adicionalmente se probo el API con POSTMAN como se observa en el video [aqui](https://github.com/nicolasOL/AMAZON-GATEWAY-Y-LAMBDA/blob/master/Video-funcionamiento.mp4)
 
  ## Generación de imágenes y contenedores Docker 
  En total el proyecto se compone de una imagen.
@@ -106,9 +106,10 @@ http://ec2-3-95-200-234.compute-1.amazonaws.com/convert?value=XXXXXXXXXXX
  ```
 https://gbg4cgsje4.execute-api.us-east-1.amazonaws.com/v1?value=XXXXXXXXXXX
 ``` 
-Se usan los dos servicios disponibles en la aplicacion
 
- 
+ ## Video funcionamiento
+ Accediendo al siguiente link se puede observar el funcionamiento de los servicios:
+ https://github.com/nicolasOL/AMAZON-GATEWAY-Y-LAMBDA/blob/master/Video-funcionamiento.mp4
 
 ## Documentacion
   
