@@ -17,11 +17,11 @@ Salida. El formato de la salida y la respuesta debe ser un JSON con el siguiente
 
 {
 
- "operation": "cos",
+ "operation": "convert",
 
- "input":  3.141592,
+ "input":  32,
 
- "output":  -0.999999
+ "output":  0.0
 
 }
 
@@ -45,7 +45,7 @@ git clone https://github.com/nicolasOL/AMAZON-GATEWAY-Y-LAMBDA/
 Entremos a el directorio del proyecto
 
 ```
-cd Parcial-2-AREP
+cd AMAZON-GATEWAY-Y-LAMBDA
 ```
 
 Debemos compilar el proyecto, que contiene las clases necesarias para poder correr la app. Por medio de maven vamos a crear todos los compilables **.class**. Desde consola, y ubicados en la carpeta donde se encuentra nuestra configuración de maven.
@@ -66,7 +66,9 @@ Los datos del programa se reciben por entrada en el despliegue separados por esp
 Para ejecutar las pruebas es necesario ejecutar:
 ```
 mvn test
-```     
+``` 
+Adicionalmente se probo el API con POSTMAN como se observa en el video:
+
  ## Generación de imágenes y contenedores Docker 
  En total el proyecto se compone de una imagen.
  1. Para desplegar el proyecto, se deben clonar los dos repisotorios que contienen la apliación web y el servicio log, en principio, para hacer algunas configuraciones:
@@ -78,35 +80,39 @@ mvn test
   - En el directorio raíz del servicio web:                                                                                     
     Imagen:
     ```
-    docker build --tag parcialarep .
+    docker build --tag laboratorio .
     ```
     Contenedor:
     ```
-    docker run -d -p 80:6000 --name parcialarep
+    docker run -d -p 80:6000 --name laboratorio
     ```                                                 
     Al final se ejecuta la imagen con:
       ```
-      docker run -d -p 80:6000 --name parcialarep
+      docker run -d -p 80:6000 --name laboratorio
       ```
 
  ## Despliegue AWS EC2
  Accediendo al siguiente link se puede tener acceso a la aplicación web:                                                       
- http://ec2-54-165-200-75.compute-1.amazonaws.com/
+ http://ec2-3-95-200-234.compute-1.amazonaws.com/convert
  y usando 
  ```
-http://ec2-54-165-200-75.compute-1.amazonaws.com/asin?value=XXXXXXXXXXX
+http://ec2-3-95-200-234.compute-1.amazonaws.com/convert?value=XXXXXXXXXXX
 ``` 
-O
+
+ ## Despliegue API GATEWAY
+ Accediendo al siguiente link se puede tener acceso a la aplicación web:                                                       
+ https://gbg4cgsje4.execute-api.us-east-1.amazonaws.com/v1
+ y usando 
  ```
-http://ec2-54-165-200-75.compute-1.amazonaws.com/exp?value=XXXXXXXXXXX
-```
+https://gbg4cgsje4.execute-api.us-east-1.amazonaws.com/v1?value=XXXXXXXXXXX
+``` 
 Se usan los dos servicios disponibles en la aplicacion
 
  
 
 ## Documentacion
   
-Para encontrar toda la documentación relacionada puedes hacer click [aqui](https://github.com/nicolasOL/Parcial-2-AREP/blob/main/LICENSE.txt)
+Para encontrar toda la documentación relacionada puedes hacer click [aqui](https://github.com/nicolasOL/AMAZON-GATEWAY-Y-LAMBDA/tree/master/docs)
   
   ## Author
   
@@ -114,4 +120,4 @@ Para encontrar toda la documentación relacionada puedes hacer click [aqui](http
   
   ## License
   
-  This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/nicolasOL/Parcial-2-AREP/blob/main/LICENSE.txt)
+  This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/nicolasOL/AMAZON-GATEWAY-Y-LAMBDA/blob/master/LICENSE.txt)
